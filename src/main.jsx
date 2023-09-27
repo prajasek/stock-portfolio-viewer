@@ -20,9 +20,6 @@ const routes = createBrowserRouter([{
     ]
 }])
 
-debugger;
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={routes}/>
