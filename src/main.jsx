@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { StockOverview } from '@routes/StockOverview';
 import { StockDetails } from '@routes/StockDetails';
 
-
+//console.log(b)
 const routes = createBrowserRouter([{
     path: "/",
     element: <App />, 
@@ -20,6 +20,7 @@ const routes = createBrowserRouter([{
     ]
 }])
 
+debugger;
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
