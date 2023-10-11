@@ -8,9 +8,9 @@ export default defineConfig({
     alias: {
       // eslint-disable-next-line no-undef
       '@routes':path.resolve(__dirname,"./src/routes"),
+      // eslint-disable-next-line no-undef
       '@components' : path.resolve(__dirname, './src/components')
     }
   },
   plugins: [react()],
 })
-

@@ -1,6 +1,8 @@
 import { useState } from "react";
+import "../App.css";
 
-export default function Search(props) {
+
+export default function Search() {
 
     const defaultValue= 'Search Symbol...';
     const [inputValue, setInputValue] = useState(defaultValue);

@@ -4,18 +4,26 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import { StockOverview } from '@routes/StockOverview';
 import { StockDetails } from '@routes/StockDetails';
+import "./App.css"
+import "./api/finn"
 
+function EE() {
+  return <h1> Error Page. </h1>
+}
 
 const routes = createBrowserRouter([{
     path: "/",
+    loader: (p) => p, 
     element: <App />, 
     children: [
       {
         index:true, element: <StockOverview />
       },
       {
+        loader: ({params}) => params,
         path: "detail/:symbol",
         element: <StockDetails />,
+        errorElement: <EE />
       }
     ]
 }])
