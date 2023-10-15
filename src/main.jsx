@@ -28,6 +28,8 @@ const routes = createBrowserRouter([{
     ]
 }])
 
+console.log("->\n", routes)
+console.log( <RouterProvider router={routes}/>)
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={routes}/>
